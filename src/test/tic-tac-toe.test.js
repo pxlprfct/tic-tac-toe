@@ -52,7 +52,7 @@ describe(`Tic-tac-toe is a game for two players, 'X' and 'O', who take turns mar
     makeMove.mockClear();
   });
 
-  describe(`A player can wins when they have a vertical line`, () => {
+  describe(`A player wins when they have a vertical line`, () => {
     test(`A new game starts on an empty 3x3 grid`, () => {
       STATE = startGame();
       expect(mockConsole).toHaveBeenCalledWith(START_GAME);
@@ -94,7 +94,7 @@ describe(`Tic-tac-toe is a game for two players, 'X' and 'O', who take turns mar
     });
   });
 
-  describe(`A player can wins when they have a horizontal line`, () => {
+  describe(`A player wins when they have a horizontal line`, () => {
     test(`A new game starts on an empty 3x3 grid`, () => {
       STATE = startGame();
       expect(mockConsole).toHaveBeenCalledWith(START_GAME);
@@ -145,7 +145,7 @@ describe(`Tic-tac-toe is a game for two players, 'X' and 'O', who take turns mar
     });
   });
 
-  describe(`A player can wins when they have a diagonal line`, () => {
+  describe(`A player wins when they have a diagonal line`, () => {
     test(`A new game starts on an empty 3x3 grid`, () => {
       STATE = startGame();
       expect(mockConsole).toHaveBeenCalledWith(START_GAME);
